@@ -1,12 +1,12 @@
-name: Environment Variable Demo
+name: Update greeting variable
 
 on: [push]
 
 env:
   GREETING: "Hi"
-  jobs:
 
-   print-greeting:
+jobs:
+  print-greeting:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greeting
